@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS intro</title>
+	<style type="text/css">
+/*		properties + value = declaration or css rule*/
+
+	.div1,.div2,.div3{
+		width: 200px;
+		height: 100px;
+		background-color: green;
+		color: white;
+
+		border: 20px solid black;
+		outline: 10px solid yellow;   //outline ka outside mr bae yuu tr
+
+		padding: 20px;   //inside ka ny p kan tr outside ko ma yuu buu
+	}
+
+	.div2{
+		box-sizing: border-box;    //width nat height a tine border yuu mr
+	}
+
+	.div3{
+		box-sizing: content-box;  //default pr tr br ma , ma change buu
+	}
+
+	.div4{
+		width: 200px;
+		height: 100px;
+		background-color: steelblue;
+		color: white;
+
+		margin-left: 20px;
+	}
+
+	</style>
+</head>
+<body>
+
+	<h1>Box sizing / Border Box</h1>
+
+	<div class="div1">
+		This is Div1
+	</div>
+
+	<hr/>
+
+	<div class="div2">
+		This is Div2
+	</div>
+
+	<hr/>
+
+	<div class="div3">
+		This is Div3
+	</div>
+
+	<hr/>
+
+	<div class="div4">
+		This is Div4
+	</div>
+
+	<hr/>
+
+</body>
+</html>

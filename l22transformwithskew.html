@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Transform with Skew</title>
+    <style type="text/css">
+      
+        .container{
+            width: 1200px;
+            background-color: gray;
+            margin: 3rem 0;
+        } 
+
+        .container .square{
+            width: 150px;
+            height: 50px;
+            background-color: steelblue;
+            color: #fff;
+            font-size: 20px;
+
+            text-align: center;
+            line-height: 50px;
+
+            border-radius: 5px;
+
+            transition-property: transform;
+            transition-duration: 1s;
+            transition-timing-function: linear;
+
+        }
+
+        #skew:hover{
+            /* skew(x); */
+
+            /* transform: skew(45deg); */
+            transform: skew(-45deg);
+
+        }
+
+        #skewx:hover{
+            /* skewX() */
+
+            /* transform: skewX(45deg); */
+            transform: skewX(-45deg);
+        }
+
+        #skewy:hover{
+            /* skewY() */
+
+            /* transform: skewY(30deg); */
+            transform: skewY(-30deg);
+        }
+
+        #skewxy:hover{
+            /* skew(x,y); */
+
+            /* transform: skew(30deg,0); */
+            /* transform: skew(0,30deg); */
+            
+            transform: skewX(15deg) skewY(30deg);
+
+        }
+
+        
+       
+
+    </style>
+
+</head>
+<body>
+
+    <div class="container">
+        <div id="skew" class="square">Div 1</div>
+    </div>
+    
+    <div class="container">
+        <div id="skewx" class="square">Div 2 x</div>
+    </div>
+
+    <div class="container">
+        <div id="skewy" class="square">Div 3 y</div>
+    </div>
+
+    <div class="container">
+        <div id="skewxy" class="square">Div 4 xy</div>
+    </div>
+
+
+    
+</body>
+</html>

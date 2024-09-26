@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Perspective Origin</title>
+    <style type="text/css">
+    *{
+        perspective: 500px;
+    }
+
+     body {
+        height: 100vh;
+        display: grid;
+        place-items: center;
+     }
+
+     .container {
+        perspective-origin: right bottom;
+                /* left center */
+        /* perspective-origin: 0; */
+                    /* left top */
+        /* perspective-origin: 0 0; */
+        /* perspective-origin: 0 bottom; */
+        /* perspective-origin: 100% bottom; */
+
+        /* perspective-origin: 0 top; */
+        /* perspective-origin: 100% top; */
+
+        /* perspective-origin: 50% 50%; */
+     }
+     
+     .container img {
+        width: 300px;
+        transition: transform 1s linear;
+     }
+
+     .container img:hover {
+        transform: translateZ(300px);
+     }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="./img/dog.jpg">
+    </div>
+</body>
+</html>

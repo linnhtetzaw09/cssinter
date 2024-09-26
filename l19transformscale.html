@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Transform Scale</title>
+    <style type="text/css">
+      
+        .container{
+            width: 1200px;
+            background-color: gray;
+
+           
+            margin: 3rem 0;
+        }
+
+        .container .square{
+            width: 150px;
+            height: 70px;
+            background-color: steelblue;
+            color: #000;
+            font-size: 20px;
+
+            text-align: center;
+            line-height: 50px;
+
+            border-radius: 5px;
+
+            transition-property: transform;
+            transition-duration: 1s;
+            transition-timing-function: linear;
+
+        }
+
+       #scale:hover{
+        /* scale: (angelxy); */
+        /* default ka 1 */
+         transform: scale(1.5);
+       }
+
+       #scalexy:hover{
+        /* scale: (x,y); */
+        /* transform: scale(1,1.5); */
+        transform: scale(2,1);
+       }
+
+       #scalex:hover{
+        /* scale: (angelx); */
+        transform: scaleX(0.5);
+       }
+
+       #scaley:hover{
+        /* scale: (angely); */
+        transform: scaleY(2);
+       }
+
+        
+       
+
+    </style>
+  </head>
+  <body>
+    
+    <div class="container">
+        <div id="scale" class="square">Div 1 XY </div>
+    </div>
+
+    <div class="container">
+        <div id="scalexy" class="square">Div 2 X,Y</div>
+    </div>
+    
+    <div class="container">
+        <div id="scalex" class="square">Div 2 X</div>
+    </div>
+
+    <div class="container">
+        <div id="scaley" class="square">Div 3 Y</div>
+    </div>
+
+    
+
+  </body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Transition with Rotate</title>
+    <style type="text/css">
+      
+        .container{
+            width: 1200px;
+            background-color: gray;
+
+            /* rem(root element's font size) */
+            /* 1rem = 16px */
+            margin: 3rem 0;
+        }
+
+        .container .square{
+            width: 150px;
+            height: 50px;
+            background-color: steelblue;
+            color: #000;
+            font-size: 20px;
+
+            text-align: center;
+            line-height: 50px;
+
+            border-radius: 5px;
+
+            transition-property: transform;
+            transition-duration: 3s;
+            transition-timing-function: linear;
+
+        }
+
+        #rotate:hover{
+            transform: rotate(30deg);
+        }
+
+        #rotatex:hover{
+            transform: rotateX(-200grad);
+        }
+
+        #rotatey:hover{
+            /* 1turn = 360deg */
+            /* 400grad = 360deg */
+            transform: rotateY(1turn);
+        }
+       
+
+    </style>
+  </head>
+  <body>
+    
+    <div class="container">
+        <div id="rotate" class="square">Div 1 XY </div>
+    </div>
+    
+    <div class="container">
+        <div id="rotatex" class="square">Div 2 X</div>
+    </div>
+
+    <div class="container">
+        <div id="rotatey" class="square">Div 3 Y</div>
+    </div>
+
+    
+
+  </body>
+</html>
